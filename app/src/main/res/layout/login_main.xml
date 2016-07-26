@@ -1,11 +1,5 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/login_relativeLayout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#4644aa"
@@ -20,7 +14,7 @@
         android:layout_marginTop="20dp"
         app:mtf_cardCollapsedHeight="4dp"
         app:mtf_hasFocus="false"
-        app:mtf_image="@drawable/ic_mood_black_24dp">
+        app:mtf_image="@drawable/ic_fingerprint_black_24dp">
 
         <!--
         app:mtf_animationDuration="1000"
@@ -33,7 +27,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="GD No."
+            android:hint="GR No."
             android:singleLine="true"
             android:textColor="#333"
             android:textColorHint="#666"
@@ -45,12 +39,13 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="50dp"
         android:layout_marginLeft="4dp"
         android:layout_marginRight="4dp"
         android:layout_marginTop="20dp"
         app:mtf_cardCollapsedHeight="4dp"
 
-        app:mtf_image="@drawable/ic_mood_black_24dp">
+        app:mtf_image="@drawable/ic_https_black_24dp">
 
         <!--
         app:mtf_animationDuration="1000"
@@ -64,6 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="PassCode"
+            android:inputType="numberPassword"
             android:singleLine="true"
             android:textColor="#333"
             android:textColorHint="#666"
@@ -71,21 +67,21 @@
 
     </com.github.florent37.materialtextfield.MaterialTextField>
 
-</LinearLayout>
-
-    <com.dd.CircularProgressButton
-        android:id="@+id/login_button"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="56dp"
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:cpb_textComplete="Success!"
-        app:cpb_textError="Error"
-        app:cpb_textIdle="Login"
-        android:background="#5c6bc0"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_check_white_24dp"
+
         />
 
-</RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="LogIn"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

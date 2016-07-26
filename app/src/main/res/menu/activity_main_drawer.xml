@@ -3,33 +3,41 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="Login" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_account_balance_black_24dp"
+            android:title="Home" />
+
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/nav_activities"
+            android:icon="@drawable/ic_rowing_black_24dp"
+            android:title="Activity reports" />
+
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_aboutUs"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:title="About Us" />
+
+        <item
+            android:id="@+id/nav_contactUs"
+            android:icon="@drawable/ic_settings_phone_black_24dp"
+            android:title="Contact Us" />
+
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="eYuva">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:id="@+id/nav_eYuva_aboutUs"
+                android:icon="@drawable/ic_favorite"
+                android:title="About eYuva" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/nav_eYuva_contactUs"
+                android:icon="@drawable/ic_local_phone_black_24dp"
+                android:title="Contact eYuva" />
         </menu>
     </item>
 

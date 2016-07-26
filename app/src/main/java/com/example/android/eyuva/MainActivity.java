@@ -1,12 +1,9 @@
 package com.example.android.eyuva;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.view.View;
-import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -87,21 +84,23 @@ public class MainActivity extends AppCompatActivity
         Class fragmentClass = null;
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_login) {
             fragmentClass = LoginFragment.class;
+            // Handle the camera action
+        } else if (id == R.id.nav_home) {
 
-        } else if (id == R.id.nav_slideshow) {
+
+        } else if (id == R.id.nav_activities) {
             fragmentClass = AboutUsFragment.class;
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_aboutUs) {
             fragmentClass = ContactsFragment.class;
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_contactUs) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_eYuva_aboutUs) {
+
+        } else if (id == R.id.nav_eYuva_contactUs) {
 
         }
         try {
