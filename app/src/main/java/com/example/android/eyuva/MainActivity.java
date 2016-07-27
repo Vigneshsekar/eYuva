@@ -21,6 +21,14 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private HomeFragment homeFragment = new HomeFragment();
+    private ReportsFragment reportsFragment = new ReportsFragment();
+    public HomeFragment getHomeFragment(){
+        return homeFragment;
+    }
+    public ReportsFragment getReportsFragment(){
+        return reportsFragment;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,10 +63,11 @@ public class MainActivity extends AppCompatActivity
     }
 
     // Add Fragments to Tabs
-    private void setupViewPager(ViewPager viewPager) {
+
+    public void setupViewPager(ViewPager viewPager) {
         Adapter adapter = new Adapter(getSupportFragmentManager());
-        adapter.addFragment(new HomeFragment(), "Home");
-        adapter.addFragment(new ReportsFragment(), "Reports");
+        adapter.addFragment(homeFragment, "Home");
+        adapter.addFragment(reportsFragment, "Reports");
         viewPager.setAdapter(adapter);
     }
 
