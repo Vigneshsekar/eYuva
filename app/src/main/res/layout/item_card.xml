@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/card_image_height"
             android:scaleType="centerCrop"
-            tools:src="@drawable/a" />
+            tools:src="@drawable/weeklycover" />
 
         <TextView
             android:id="@+id/card_title"
@@ -43,7 +43,7 @@
             android:layout_height="@dimen/card_title_height"
             android:layout_alignBottom="@+id/card_image"
             android:layout_marginLeft="@dimen/md_keylines"
-            tools:text="Paris"
+            tools:text="Vikas weekly edition V"
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             android:textColor="@color/white" />
 
@@ -56,7 +56,7 @@
             android:layout_marginTop="@dimen/md_keylines"
             android:layout_marginBottom="@dimen/md_keylines"
             android:layout_marginRight="@dimen/md_keylines"
-            tools:text="Athu oru city da"
+            tools:text="The creative art work of our students are on display"
             android:ellipsize="end"
             android:singleLine="true"
             android:textColor="@color/dark_grey"
@@ -69,11 +69,11 @@
             android:layout_below="@+id/card_text"
             style="?android:attr/borderlessButtonStyle"
             android:textColor="?attr/colorPrimary"
-            android:text="Action" />
+            android:text="Open" />
 
         <ImageButton
-            android:id="@+id/share_button"
-            android:layout_width="@dimen/cards_button_width"
+    android:id="@+id/share_button"
+    android:layout_width="@dimen/cards_button_width"
             android:layout_height="@dimen/cards_button_height"
             android:layout_marginRight="@dimen/md_keylines"
             app:srcCompat="@drawable/ic_share"

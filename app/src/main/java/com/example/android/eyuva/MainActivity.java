@@ -65,9 +65,12 @@ public class MainActivity extends AppCompatActivity
     // Add Fragments to Tabs
 
     public void setupViewPager(ViewPager viewPager) {
+        MainActivity mainActivity = new MainActivity();
+        HomeFragment homeFragmentOne = mainActivity.getHomeFragment();
+        ReportsFragment reportsFragmentOne = mainActivity.getReportsFragment();
         Adapter adapter = new Adapter(getSupportFragmentManager());
-        adapter.addFragment(homeFragment, "Home");
-        adapter.addFragment(reportsFragment, "Reports");
+        adapter.addFragment(homeFragmentOne, "Home");
+        adapter.addFragment(reportsFragmentOne, "Reports");
         viewPager.setAdapter(adapter);
     }
 
