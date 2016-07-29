@@ -21,6 +21,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    /*
     private HomeFragment homeFragment = new HomeFragment();
     private ReportsFragment reportsFragment = new ReportsFragment();
     public HomeFragment getHomeFragment(){
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity
     public ReportsFragment getReportsFragment(){
         return reportsFragment;
     }
+    */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +39,6 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setElevation(0);
-
 
 
         /*
@@ -59,11 +60,13 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        //navigationView.setCheckedItem(R.id.nav_home);
         navigationView.setNavigationItemSelectedListener(this);
     }
 
     // Add Fragments to Tabs
 
+    /*
     public void setupViewPager(ViewPager viewPager) {
         MainActivity mainActivity = new MainActivity();
         HomeFragment homeFragmentOne = mainActivity.getHomeFragment();
@@ -73,6 +76,7 @@ public class MainActivity extends AppCompatActivity
         adapter.addFragment(reportsFragmentOne, "Reports");
         viewPager.setAdapter(adapter);
     }
+    */
 
     @Override
     public void onBackPressed() {

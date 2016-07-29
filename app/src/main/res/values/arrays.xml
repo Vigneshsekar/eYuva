@@ -105,6 +105,8 @@
 
     <string-array name="weekly_heading">
         <item>Vikas weekly edition V</item>
+        <item>Vikas weekly edition V</item>
+
     </string-array>
 
     <string-array name="weekly_desc">
@@ -114,5 +116,21 @@
     <string-array name="weekly_pictures">
         <item>@drawable/weeklycover</item>
     </string-array>
+
+    <string-array name="subject">
+        <item>Physics weekly report</item>
+        <item>Chemistry</item>
+        <item>Mathematics</item>
+        <item>ComputerScience</item>
+        <item>Tamil</item>
+        <item>English</item>
+    </string-array>
+
+
+    <string-array name="report_cover">
+        <item>@drawable/physicscover</item>
+    </string-array>
+
+
 
 </resources>
