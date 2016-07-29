@@ -5,7 +5,8 @@
         <item
             android:id="@+id/nav_login"
             android:icon="@drawable/ic_account_circle_black_24dp"
-            android:title="Login" />
+            android:title="Login"
+             />
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_account_balance_black_24dp"
@@ -14,17 +15,26 @@
         <item
             android:id="@+id/nav_activities"
             android:icon="@drawable/ic_rowing_black_24dp"
-            android:title="Activity reports" />
+            android:title="Activity reports"
+            android:enabled="false"/>
 
         <item
             android:id="@+id/nav_aboutUs"
             android:icon="@drawable/ic_book_black_24dp"
-            android:title="About Us" />
+            android:title="About Us"
+            android:enabled="false"/>
 
         <item
             android:id="@+id/nav_contactUs"
             android:icon="@drawable/ic_settings_phone_black_24dp"
-            android:title="Contact Us" />
+            android:title="Contact Us"
+            android:enabled="false"/>
+
+        <item
+            android:id="@+id/nav_examples"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:title="Examples"
+            />
 
     </group>
 
@@ -33,11 +43,13 @@
             <item
                 android:id="@+id/nav_eYuva_aboutUs"
                 android:icon="@drawable/ic_favorite"
-                android:title="About eYuva" />
+                android:title="About eYuva"
+                android:enabled="false"/>
             <item
                 android:id="@+id/nav_eYuva_contactUs"
                 android:icon="@drawable/ic_local_phone_black_24dp"
-                android:title="Contact eYuva" />
+                android:title="Contact eYuva"
+                android:enabled="false"/>
         </menu>
     </item>
 
